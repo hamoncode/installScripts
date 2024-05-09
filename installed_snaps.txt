@@ -1,0 +1,7 @@
+discord
+emacs
+intellij-idea-community
+nordpass
+spotify
+tmux-non-dead
+zoom-client
