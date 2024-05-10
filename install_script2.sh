@@ -17,7 +17,10 @@ sudo apt install -y build-essential curl flatpak gh kitty neofetch nodejs npm pa
 log "Installing snap packages..."
 sudo apt install snapd || { log "Error installing snapd"; exit 1; }
 sudo snap install core || { log "Error installing snap core"; exit 1; }
-sudo snap install discord intellij-idea-community nordpass spotify zoom-client || { log "Error installing snap packages"; exit 1; }
+sudo snap install discord nordpass spotify zoom-client || { log "Error installing snap packages"; exit 1; }
+
+# intall snap package with classic conginement
+sudo snap install intellij-idea-community --classic || {log "error installing intellij";exit 1;}
 
 # Install nvim with astroNvim package
 log "Installing nvim with AstroNvim package..."
