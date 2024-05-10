@@ -1,3 +1,4 @@
+#!/bin/zsh
 # Install nvim with astroNvim package
 sudo apt install neovim
 git clone --depth 1 https://github.com/AstroNvim/template ~/.config/nvim
