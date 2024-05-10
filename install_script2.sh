@@ -10,8 +10,3 @@ sudo apt install -y build-essential curl flatpak gh kitty librewolf neofetch nod
 # Install snap packages
 sudo snap install discord intellij-idea-community nordpass spotify zoom-client
 
-# Notify user about the upcoming reboot
-echo "Installation complete. Rebooting the system to apply changes..."
-
-# Reboot the system
-sudo reboot
