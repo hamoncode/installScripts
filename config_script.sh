@@ -21,4 +21,3 @@ done
 
 # Switch default shell to Zsh
 chsh -s "$(which zsh)" && echo "Default shell changed to Zsh."
-
