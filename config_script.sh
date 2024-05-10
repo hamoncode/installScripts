@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/zsh
 
 # Change directory to the dotfiles repository
 cd ~/dotfiles
