@@ -8,9 +8,11 @@ chmod +x install_script.sh config_script.sh
 
 ## étapes de l'installation
 
-1) lancer le install script
+1) lancer les installs scripts
 
-./install_script.sh
+./install_script1.sh
+./install_script2.sh
+
 
 2) cloner repo git hub pour importer les dotfiles
 
