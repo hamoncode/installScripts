@@ -1,7 +1,7 @@
 #!/bin/zsh
 
 # Install additional apt packages
-sudo apt install -y build-essential curl flatpak gh kitty librewolf neofetch nodejs npm pandoc pipewire ripgrep tmux wireplumber xclip zathura zathura-pdf-poppler
+sudo apt install -y build-essential curl flatpak gh kitty neofetch nodejs npm pandoc pipewire ripgrep tmux wireplumber xclip zathura zathura-pdf-poppler
 
 # Install snap packages
 sudo apt install snapd
