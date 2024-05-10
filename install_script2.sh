@@ -9,16 +9,6 @@ sudo apt install -y build-essential curl flatpak gh kitty librewolf neofetch nod
 # Install snap packages
 sudo snap install discord intellij-idea-community nordpass spotify zoom-client
 
-# git config 
-
-git config --global user.name "hamoncode"
-git config --global user.email "vincent.hamon23@gmail.com"
-git config --global core.editor "nvim"
-
-echo "please provide input for configuration of git hub CLI"
-
-gh auth login 
-
 # Notify user about the upcoming reboot
 echo "Installation complete. Rebooting the system to apply changes..."
 
