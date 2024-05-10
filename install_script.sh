@@ -27,7 +27,7 @@ nvim
 sudo apt install -y build-essential curl flatpak gh kitty librewolf neofetch nodejs npm pandoc pipewire ripgrep snapd tmux wireplumber xclip zathura zathura-pdf-poppler
 
 # Install snap packages
-sudo snap install discord emacs intellij-idea-community nordpass spotify zoom-client
+sudo snap install discord intellij-idea-community nordpass spotify zoom-client
 
 # Notify user about the upcoming reboot
 echo "Installation complete. Rebooting the system to apply changes..."
