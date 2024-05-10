@@ -15,7 +15,7 @@ ln -sf "$DOTFILES_DIR/.zshrc" ~/.zshrc && echo "Shell configuration symbolic lin
 # Set up symbolic links for .desktop files
 DESKTOP_DIR="$HOME/.local/share/applications"
 mkdir -p "$DESKTOP_DIR"
-for file in "$DOTFILES_DIR/.local/applications"/*.desktop; do
+for file in "$DOTFILES_DIR/.local/share/applications"/*.desktop; do
     ln -sf "$file" "$DESKTOP_DIR/" && echo ".desktop file symbolic link set up successfully."
 done
 
