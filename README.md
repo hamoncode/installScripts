@@ -2,7 +2,7 @@
 
 ## préparation
 
-- donner permission au script de s'executer
+- donner permission au scripts de s'executer
 
 chmod +x install_script.sh config_script.sh
 
@@ -20,4 +20,3 @@ git clone git@github.com:hamoncode/dotfile.git
 
 ./config_script.sh
 
-- lancer zsh a la fin du script

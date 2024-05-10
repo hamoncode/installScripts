@@ -1,12 +1,5 @@
 #!/bin/bash
 
-
-# git config 
-
-git config --global user.name "hamoncode"
-git config --global user.email "vincent.hamon23@gmail.com"
-git config --global core.editor "nvim"
-
 # Change directory to the dotfiles repository
 cd ~/dotfiles
 
