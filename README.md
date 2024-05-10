@@ -4,7 +4,7 @@
 
 - donner permission au scripts de s'executer
 
-chmod +x install_script.sh config_script.sh
+chmod +x install_script1.sh install_script2.sh config_script.sh
 
 ## étapes de l'installation
 
