@@ -8,7 +8,7 @@ chmod +x install_script.sh  config_script.sh
 
 ## étapes de l'installation
 
-1) lancer les installs scripts
+1) lancer le install script
 
 ./install_script.sh
 
