@@ -1,4 +1,4 @@
-# documentation intallation script machine ubuntu
+# documentation intallation script machine Debian
 
 ## préparation
 
