@@ -24,7 +24,3 @@ echo "Please provide input for configuration of Oh My Zsh"
 sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)" || { log "Error installing Oh My Zsh"; exit 1; }
 
 log "Installation completed successfully!"
-
-
-# Install Oh My Zsh
-sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
