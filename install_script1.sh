@@ -13,12 +13,6 @@ sudo apt update && sudo apt upgrade || { log "Error updating and upgrading apt p
 log "Installing essential packages..."
 sudo apt install -y git gh wget zsh || { log "Error installing essential packages"; exit 1; }
 
-# Git configuration
-log "Configuring git..."
-git config --global user.name "hamoncode" || { log "Error configuring git user name"; exit 1; }
-git config --global user.email "vincent.hamon23@gmail.com" || { log "Error configuring git user email"; exit 1; }
-git config --global core.editor "nvim" || { log "Error configuring git core editor"; exit 1; }
-
 # Configure GitHub CLI
 log "Configuring GitHub CLI..."
 echo "Please provide input for configuration of GitHub CLI"
