@@ -1,4 +1,4 @@
-# documentation intallation script machine Debian
+# documentation intallation script for Debian 12
 
 ## préparation
 
