@@ -5,24 +5,24 @@ echo "Updating and upgrading apt package lists..."
 sudo apt update && sudo apt upgrade || { echo "Error updating and upgrading apt packages"; exit 1; }
 
 # Install essential packages
-log "Installing essential packages..."
+echo "Installing essential packages..."
 sudo apt install -y git gh wget zsh || { echo "Error installing essential packages"; exit 1; }
 
 # Configure GitHub CLI
-log "Configuring GitHub CLI..."
+echo "Configuring GitHub CLI..."
 echo "Please provide input for configuration of GitHub CLI"
 gh auth login || { echo "Error configuring GitHub CLI"; exit 1; }
 
 # Update package lists
-log "Updating package lists..."
+echo "Updating package lists..."
 sudo apt update
 
 # Install additional apt packages
-log "Installing additional apt packages..."
+echo "Installing additional apt packages..."
 sudo apt install -y build-essential curl flatpak gh kitty neofetch nodejs npm pandoc pipewire ripgrep tmux wireplumber xclip zathura zathura-pdf-poppler || { echo "Error installing apt packages"; exit 1; }
 
 # Install snap packages
-log "Installing snap packages..."
+echo "Installing snap packages..."
 sudo apt install snapd || { echo "Error installing snapd"; exit 1; }
 sudo snap install core || { echo "Error installing snap core"; exit 1; }
 sudo snap install discord || { echo "Error installing discord"; exit 1; }
@@ -43,4 +43,4 @@ log "Installing Oh My Zsh..."
 echo "Please provide input for configuration of Oh My Zsh"
 sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)" || { echo "Error installing Oh My Zsh"; exit 1; }
 
-log "Installation completed successfully!"
+echo "Installation completed successfully!"
