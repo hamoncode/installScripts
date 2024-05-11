@@ -8,3 +8,7 @@ ln -s ~/.dotfiles/.zshrc ~/.zshrc
 
 rm -rf ~/.local/share/applications || echo {"erreur pas de folder applications trouvé"; exit 1;}
 ln -s ~/.dotfiles/applications ~/.local/share/applications
+
+# permalink pour les configurations du terminale
+rm -rf ~/.config/kitty || echo {"erreur pas de folder applications trouvé"; exit 1;}
+ln -s ~/.dotfiles/kitty ~/.config/kitty
