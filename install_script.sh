@@ -32,14 +32,14 @@ sudo snap install zoom-client || { echo "Error installing zoom"; exit 1; }
 sudo snap install intellij-idea-community --classic || {echo "error installing intellij";exit 1;}
 
 # Install nvim with astroNvim package
-log "Installing nvim with AstroNvim package..."
+echo "Installing nvim with AstroNvim package..."
 sudo snap install nvim --classic || { echo "Error installing nvim"; exit 1; }
 rm -rf ~/.config/nvim
 git clone --depth 1 https://github.com/AstroNvim/template ~/.config/nvim || { echo "Error cloning AstroNvim template"; exit 1; }
 rm -rf ~/.config/nvim/.git
 
 # Install Oh My Zsh
-log "Installing Oh My Zsh..."
+echo "Installing Oh My Zsh..."
 echo "Please provide input for configuration of Oh My Zsh"
 sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)" || { echo "Error installing Oh My Zsh"; exit 1; }
 
