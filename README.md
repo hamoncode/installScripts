@@ -14,7 +14,7 @@ chmod +x install_script.sh  config_script.sh
 
 2) importer les dotfiles selon système au choix
 
-3) lancer le script qui deletes les defaults dotfiles et qui crée des permalinks
+3) lancer le script qui finalise la configuration
 
 ./config_script.sh
 
