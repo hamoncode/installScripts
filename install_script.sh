@@ -29,7 +29,7 @@ sudo snap install discord || { echo "Error installing discord"; exit 1; }
 sudo snap install nordpass || { echo "Error installing nordpass"; exit 1; }
 sudo snap install spotify || { echo "Error installing spotify"; exit 1; }
 sudo snap install zoom-client || { echo "Error installing zoom"; exit 1; }
-sudo snap install intellij-idea-community --classic || {echo "error installing intellij";exit 1;}
+sudo snap install intellij-idea-community --classic || { echo "error installing intellij"; exit 1; }
 
 # Install nvim with astroNvim package
 echo "Installing nvim with AstroNvim package..."
