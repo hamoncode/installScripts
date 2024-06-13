@@ -28,5 +28,5 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 
 git clone https://github.com/marlonrichert/zsh-autocomplete.git 
 
-b) mettre zsh-autosuggestion dans ~/.oh-my-zsh/plugin
+b) mettre zsh-autosuggestion dans ~/.oh-my-zsh/plugins
 
