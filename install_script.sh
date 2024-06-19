@@ -30,10 +30,10 @@ for package in $PackagesApt; do
 done
 
 # Install snap packages
-# echo "Installing snap packages..."
-#for package in $PackagesSnap; do
-#  sudo apt install -y "$package" || { echo "Error installing $package"; exit 1; }
-#done
+ echo "Installing snap packages..."
+for package in $PackagesSnap; do
+  sudo apt install -y "$package" || { echo "Error installing $package"; exit 1; }
+done
 
 # Update package lists
 echo "Updating package lists..."
