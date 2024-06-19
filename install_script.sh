@@ -53,7 +53,7 @@ rm -rf ~/.config/nvim/.git
 
 # Install Oh My Zsh
 echo "Installing Oh My Zsh..."
-sudo apt install zsh || { echo "Error installing zsh"; exit 1; }
+sudo apt install -y zsh || { echo "Error installing zsh"; exit 1; }
 echo "Please provide input for configuration of Oh My Zsh"
 sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)" || { echo "Error installing Oh My Zsh"; exit 1; }
 
