@@ -6,7 +6,7 @@ le install script parse deux fichiers textes (packageApt.txt et packageSnap.txt)
 - avant de lancer le script , remplacez les noms des packages que vous utilisez dans ces fichiers.
   - recherchez la doc avant les noms peuvent varier d'une distro à l'autre
     - ex: sudo snap install nvim --classic 
-      nvim --classic (à ajouter dans 1 ligne de packgageSnap.txt)
+      - nvim --classic (à ajouter dans 1 ligne de packgageSnap.txt)
 
 ## étapes de l'installation
 
