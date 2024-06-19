@@ -19,7 +19,7 @@ sudo apt update
 
 # Install additional apt packages
 echo "Installing additional apt packages..."
-sudo apt install -y build-essential curl chromium flatpak gh kitty neofetch nodejs npm pandoc pipewire ripgrep tmux wireplumber xclip zathura zathura-pdf-poppler || { echo "Error installing apt packages"; exit 1; }
+sudo apt install -y build-essential curl chromium flatpak kitty neofetch nodejs npm pandoc pipewire ripgrep tmux wireplumber xclip zathura zathura-pdf-poppler || { echo "Error installing apt packages"; exit 1; }
 
 # Install snap packages
 echo "Installing snap packages..."
