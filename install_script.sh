@@ -5,18 +5,19 @@ PACKAGE_APT="packageApt.txt"
 PACKAGE_SNAP="packageSnap.txt"
 
 # vérification that files exists
-if [[ ! -f "$PACKAGE_APT"]];
+if [[ ! -f "$PACKAGE_APT" ]]; then
   echo "error: $PACKAGE_APT not found"
   exit 1
 fi
-if [[ ! -f "$PACKAGE_SNAP"]];
+
+if [[ ! -f "$PACKAGE_SNAP" ]]; then
   echo "error: $PACKAGE_SNAP not found"
   exit 1
 fi
 
 # parser avec cat les fichier
-PackagesApt=$(cat "PACKAGE_APT")
-PackagesSnap=$(cat "PACKAGE_SNAP")
+PackagesApt=$(cat "$PACKAGE_APT")
+PackagesSnap=$(cat "$PACKAGE_SNAP")
 
 # Update and upgrade apt package lists
 echo "Updating and upgrading apt package lists..."
@@ -29,10 +30,10 @@ for package in $PackagesApt; do
 done
 
 # Install snap packages
-echo "Installing snap packages..."
-for package in $PackagesSnap; do
-  sudo apt install -y "$package" || { echo "Error installing $package"; exit 1; }
-done
+# echo "Installing snap packages..."
+#for package in $PackagesSnap; do
+#  sudo apt install -y "$package" || { echo "Error installing $package"; exit 1; }
+#done
 
 # Update package lists
 echo "Updating package lists..."
