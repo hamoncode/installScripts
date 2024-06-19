@@ -20,7 +20,7 @@ chmod u+x install_script.sh
 
 ### postnotes 
 
-- le reste des étapes est d'importer vos dotfiles avec le système de votre choix.
+- le reste des étapes consiste à importer vos dotfiles avec le système de votre choix.
   - perso j'utilise un repo git et je crée des simlinks (ex:config_script.sh)
 
 - il existe d'autre système comme stow et chezmoi qui sont plus robustes/maléables.
