@@ -1,32 +1,23 @@
 # documentation intallation script pour Debian 12
 
-## préparation
+## comment faire de ce install script facilement le vôtre
 
-- donner permission au scripts de s'executer
-
-chmod +x install_script.sh  config_script.sh
+le install script parse deux fichiers textes (packageApt.txt et packageSnap.txt)
+- ajouter les noms des packages que vous utilisez dans ces fichiers avant de lancer le script.
+  - recherchez la doc avant les noms peuvent varier d'une distro à l'autre
+    ex: nvim --classic (snap)
 
 ## étapes de l'installation
 
-1) lancer le install script
+1) donner permission au scripts de s'executer
+
+chmod u+x install_script.sh 
+
+2) lancer le install script
 
 ./install_script.sh
 
-2) importer les dotfiles selon système au choix
-
-3) lancer le script qui finalise la configuration
-
-./config_script.sh
-
-4) quick fix error zshrc
-
-a) installer packages externes qu'il manque
-
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-
-git clone https://github.com/marlonrichert/zsh-autocomplete.git 
-
-b) mettre zsh-autosuggestion dans ~/.oh-my-zsh/plugins
-
+### postnotes 
+  - le reste des étapes est d'importer vos dotfiles avec le système de votre choix.
+    - perso j'utilise un repo git et je crée des simlinks (ex:config_script)
+  - il existe d'autre système comme stow et chezmoi qui sont plus robustes/maléables.
