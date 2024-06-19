@@ -1,0 +1,7 @@
+core
+discord
+nordpass
+spotify
+intellij-idea-community --classic 
+zoom-client 
+nvim --classic
