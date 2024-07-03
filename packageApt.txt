@@ -18,3 +18,4 @@ xclip
 zathura 
 zathura-pdf-poppler  
 snapd
+mysql-server
