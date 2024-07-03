@@ -5,3 +5,4 @@ spotify
 intellij-idea-community --classic 
 zoom-client 
 nvim --classic
+mysql-workbench-community
