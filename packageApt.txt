@@ -19,3 +19,10 @@ zathura
 zathura-pdf-poppler  
 snapd
 mysql-server
+core
+discord
+nordpass
+spotify
+intellij-idea-community
+zoom-client 
+nvim
