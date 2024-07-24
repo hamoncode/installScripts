@@ -10,11 +10,6 @@ if [[ ! -f "$PACKAGE_APT" ]]; then
   exit 1
 fi
 
-if [[ ! -f "$PACKAGE_SNAP" ]]; then
-  echo "error: $PACKAGE_SNAP not found"
-  exit 1
-fi
-
 # parser avec cat les fichier
 PackagesApt=$(cat "$PACKAGE_APT")
 PackagesSnap=$(cat "$PACKAGE_SNAP")
