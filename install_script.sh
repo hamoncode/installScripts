@@ -2,7 +2,6 @@
 
 # files for parsing
 PACKAGE_APT="packageApt.txt"
-PACKAGE_SNAP="packageSnap.txt"
 
 # vérification that files exists
 if [[ ! -f "$PACKAGE_APT" ]]; then
