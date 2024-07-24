@@ -11,7 +11,6 @@ fi
 
 # parser avec cat les fichier
 PackagesApt=$(cat "$PACKAGE_APT")
-PackagesSnap=$(cat "$PACKAGE_SNAP")
 
 # Update and upgrade apt package lists
 echo "Updating and upgrading apt package lists..."
