@@ -25,7 +25,6 @@ done
 # Update package lists
 echo "Updating package lists..."
 sudo apt update
-sudo snap update
 
 # Configure GitHub CLI
 echo "Configuring GitHub CLI..."
