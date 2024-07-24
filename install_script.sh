@@ -29,16 +29,6 @@ for package in $PackagesApt; do
   sudo apt install -y "$package" || { echo "Error installing $package"; exit 1; }
 done
 
-# Install snap packages
-<<<<<<< HEAD
- echo "Installing snap packages..."
-=======
-echo "Installing snap packages..."
->>>>>>> vincent
-for package in $PackagesSnap; do
-  sudo apt install -y "$package" || { echo "Error installing $package"; exit 1; }
-done
-
 # Update package lists
 echo "Updating package lists..."
 sudo apt update
