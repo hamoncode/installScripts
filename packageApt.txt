@@ -2,9 +2,7 @@ git
 gh 
 wget 
 build-essential 
-curl 
-chromium 
-flatpak 
+curl  
 kitty 
 neofetch 
 nodejs 
@@ -16,5 +14,7 @@ tmux
 wireplumber 
 xclip 
 zathura 
-zathura-pdf-poppler  
-snapd
+zathura-pdf-poppler
+mysql-server
+discord
+neovim

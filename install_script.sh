@@ -2,7 +2,6 @@
 
 # files for parsing
 PACKAGE_APT="packageApt.txt"
-PACKAGE_SNAP="packageSnap.txt"
 
 # vérification that files exists
 if [[ ! -f "$PACKAGE_APT" ]]; then
@@ -10,14 +9,8 @@ if [[ ! -f "$PACKAGE_APT" ]]; then
   exit 1
 fi
 
-if [[ ! -f "$PACKAGE_SNAP" ]]; then
-  echo "error: $PACKAGE_SNAP not found"
-  exit 1
-fi
-
 # parser avec cat les fichier
 PackagesApt=$(cat "$PACKAGE_APT")
-PackagesSnap=$(cat "$PACKAGE_SNAP")
 
 # Update and upgrade apt package lists
 echo "Updating and upgrading apt package lists..."
@@ -29,16 +22,9 @@ for package in $PackagesApt; do
   sudo apt install -y "$package" || { echo "Error installing $package"; exit 1; }
 done
 
-# Install snap packages
-echo "Installing snap packages..."
-for package in $PackagesSnap; do
-  sudo apt install -y "$package" || { echo "Error installing $package"; exit 1; }
-done
-
 # Update package lists
 echo "Updating package lists..."
 sudo apt update
-sudo snap update
 
 # Configure GitHub CLI
 echo "Configuring GitHub CLI..."
