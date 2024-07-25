@@ -1,8 +1,13 @@
 #!/bin/bash
 
-# source/install repo of nvim install script
+# source/install repo of new release of packages
+# neovim
 source ../fromPpaUbuntu/neovimInstall.sh
 ./neovimInstall.sh
+
+# spotify
+source ../fromPpaUbuntu/spotifyInstall.sh
+./spotifyInstall.sh
 
 # files for parsing
 PACKAGE_APT="packageApt.txt"
