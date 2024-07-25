@@ -1,4 +1,3 @@
-git 
 gh 
 wget 
 build-essential 
@@ -17,4 +16,4 @@ zathura
 zathura-pdf-poppler
 mysql-server
 discord
-neovim
+chromium-browser

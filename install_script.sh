@@ -1,12 +1,6 @@
 #!/bin/bash
 
 
-# source from source installation script
-source ../fromSource/chromiumInstall.sh
-
-# install from source installation apps
-chromiumInstall.sh
-
 # files for parsing
 PACKAGE_APT="packageApt.txt"
 
