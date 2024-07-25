@@ -19,7 +19,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 git clone https://github.com/marlonrichert/zsh-autocomplete.git || { echo "erreur durant le clone de zsh-autocomplete"; exit 1; }
 
 # fix manuel du dernier pluggin  
-mv zsh-autosuggestion ~/.oh-my-zsh/plugins || { echo "erreur durant le fix zsh-autocomplete"; exit 1; }
+mv zsh-autocomplete ~/.oh-my-zsh/plugins || { echo "erreur durant le fix zsh-autocomplete"; exit 1; }
 
 echo "configuration reussi!"
 
