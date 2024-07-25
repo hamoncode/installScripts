@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# source/install repo of nvim install script
+source ../fromPpaUbuntu/neovimInstall.sh
+./neovimInstall.sh
 
 # files for parsing
 PACKAGE_APT="packageApt.txt"
