@@ -2,11 +2,9 @@
 
 ## comment faire de ce install script facilement le vôtre
 
-le install script parse deux fichiers textes (packageApt.txt et packageSnap.txt)
-- avant de lancer le script , remplacez les noms des packages que vous utilisez dans ces fichiers.
-  - recherchez la doc avant les noms peuvent varier d'une distro à l'autre
-    - ex: sudo snap install nvim --classic 
-      - nvim --classic (à ajouter dans 1 ligne de packgageSnap.txt)
+le install script parse un fichiers txt (packageApt.txt)
+- avant de lancer le script , remplacez les noms des packages que vous utilisez dans ce fichier.
+- si vous utilisez un autre package manager changez la commande apt install
 
 ## étapes de l'installation
 
