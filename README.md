@@ -2,7 +2,7 @@
 
 ## comment faire de ce install script facilement le vôtre
 
-le install script parse un fichiers txt (packageApt.txt)
+le install script parse un fichiers txt (packagePac.txt)
 - avant de lancer le script , remplacez les noms des packages que vous utilisez dans ce fichier.
 - si vous utilisez un autre package manager changez la commande apt install
 
