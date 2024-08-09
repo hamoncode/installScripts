@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 #!/bin/sh
-=======
-#!/bin/bash
->>>>>>> f877517 (update arch version)
 
 # Remove existing .zshrc file and create symlink
 if [ -f ~/.zshrc ]; then
@@ -27,19 +23,7 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting || { echo "Erreur: problème lors du clonage de zsh-syntax-highlighting"; exit 1; }
 git clone https://github.com/marlonrichert/zsh-autocomplete.git || { echo "Erreur: problème lors du clonage de zsh-autocomplete"; exit 1; }
 
-<<<<<<< HEAD
-# Move zsh-autocomplete plugin to the correct directory
-mv zsh-autocomplete ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/ || { echo "Erreur: problème lors du déplacement de zsh-autocomplete"; exit 1; }
-=======
-# fix des pluggins externes
-#git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions || { echo "erreur durant le clone de zsh-autosuggestion"; exit 1; }
-#git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting || { echo "erreur durant le clone de zsh-syntax-highlighting"; exit 1; }
-#git clone https://github.com/marlonrichert/zsh-autocomplete.git || { echo "erreur durant le clone de zsh-autocomplete"; exit 1; }
-
 # fix manuel du dernier pluggin  
-#mv zsh-autocomplete ~/.oh-my-zsh/plugins || { echo "erreur durant le fix zsh-autocomplete"; exit 1; }
-
-echo "configuration reussi!"
->>>>>>> f877517 (update arch version)
+mv ./zsh-autocomplete ~/.oh-my-zsh/plugins || { echo "erreur durant le fix zsh-autocomplete"; exit 1; }
 
 echo "Configuration réussie!"
