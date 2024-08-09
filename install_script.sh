@@ -32,11 +32,11 @@ rm -rf ~/.config/nvim || { echo "error removing nvim config"; exit 1; }
 git clone --depth 1 https://github.com/AstroNvim/template ~/.config/nvim || { echo "Error cloning AstroNvim template"; exit 1; }
 rm -rf ~/.config/nvim/.git 
 
+echo "Installation completed successfully after Oh My Zsh installation"
+echo "after would be a good idea to reboot"
+
 # Install Oh My Zsh
 echo "Installing Oh My Zsh..."
 sudo pacman -Sy zsh || { echo "Error installing zsh"; exit 1; }
 echo "Please provide input for configuration of Oh My Zsh"
 sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)" || { echo "Error installing Oh My Zsh"; exit 1; }
-
-echo "Installation completed successfully!"
-echo "now would be a good idea to reboot"
