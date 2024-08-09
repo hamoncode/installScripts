@@ -1,4 +1,4 @@
-# documentation intallation script pour packages Debian 
+# documentation intallation script pour packages dans linux
 
 ## comment faire de ce install script facilement le vôtre
 
