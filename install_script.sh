@@ -1,44 +1,30 @@
-#!/bin/bash
-
-# source/install repo of new release of packages
-# neovim
-source ../fromPpaUbuntu/neovimInstall.sh
-./neovimInstall.sh
-
-# spotify
-source ../fromPpaUbuntu/spotifyInstall.sh
-./spotifyInstall.sh
+#!/bin/sh
 
 # files for parsing
-PACKAGE_APT="packageApt.txt"
+PACKAGE_PAC="packagePac.txt"
 
 # vérification that files exists
-if [[ ! -f "$PACKAGE_APT" ]]; then
-  echo "error: $PACKAGE_APT not found"
+if [[ ! -f "$PACKAGE_PAC" ]]; then
+  echo "error: $PACKAGE_PAC not found"
   exit 1
 fi
 
 # parser avec cat les fichier
-PackagesApt=$(cat "$PACKAGE_APT")
+PackagesPac=$(cat "$PACKAGE_PAC")
 
-# Update and upgrade apt package lists
+# Update and upgrade package lists
 echo "Updating and upgrading apt package lists..."
-sudo apt update && sudo apt upgrade || { echo "Error updating and upgrading apt packages"; exit 1; }
+sudo pacman -Syu || { echo "Error updating Pacman packages"; exit 1; }
 
 # Install apt packages
 echo "Installing apt packages..."
-for package in $PackagesApt; do
-  sudo apt install -y "$package" || { echo "Error installing $package"; exit 1; }
+for package in $PackagesPac; do
+  sudo pacman -S "$package" --noconfirm || { echo "Error installing $package"; exit 1; }
 done
 
 # Update package lists
 echo "Updating package lists..."
-sudo apt update
-
-# Configure GitHub CLI
-echo "Configuring GitHub CLI..."
-echo "Please provide input for configuration of GitHub CLI"
-gh auth login || { echo "Error configuring GitHub CLI"; exit 1; }
+sudo pacman -Syu || { echo "Error updating Pacman packages"; exit 1; }
 
 # configure nvim with astroNvim package
 echo "Installing nvim with AstroNvim package..."
@@ -48,7 +34,7 @@ rm -rf ~/.config/nvim/.git
 
 # Install Oh My Zsh
 echo "Installing Oh My Zsh..."
-sudo apt install -y zsh || { echo "Error installing zsh"; exit 1; }
+sudo pacman -Sy zsh || { echo "Error installing zsh"; exit 1; }
 echo "Please provide input for configuration of Oh My Zsh"
 sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)" || { echo "Error installing Oh My Zsh"; exit 1; }
 
