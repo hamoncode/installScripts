@@ -17,3 +17,4 @@ chromium
 bat
 libreoffice-fresh
 neovim
+fzf
