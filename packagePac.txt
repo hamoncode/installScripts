@@ -18,3 +18,4 @@ bat
 libreoffice-fresh
 neovim
 fzf
+poppler
