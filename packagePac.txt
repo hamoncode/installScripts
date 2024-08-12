@@ -21,3 +21,5 @@ fzf
 poppler
 ttf-nerd-fonts-symbols 
 xdotool
+bluez 
+bluez-utils
