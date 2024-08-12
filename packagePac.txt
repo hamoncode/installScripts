@@ -20,3 +20,4 @@ neovim
 fzf
 poppler
 ttf-nerd-fonts-symbols 
+xdotool
