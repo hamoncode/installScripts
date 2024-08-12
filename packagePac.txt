@@ -23,3 +23,4 @@ ttf-nerd-fonts-symbols
 xdotool
 bluez 
 bluez-utils
+usbutils
