@@ -26,4 +26,8 @@ git clone https://github.com/marlonrichert/zsh-autocomplete.git || { echo "Erreu
 # fix manuel du dernier pluggin  
 mv ./zsh-autocomplete ~/.oh-my-zsh/plugins || { echo "erreur durant le fix zsh-autocomplete"; exit 1; }
 
+# doom emacs config
+git clone --depth 1 https://github.com/doomemacs/doomemacs ~/.config/emacs
+~/.config/emacs/bin/doom install
+
 echo "Configuration réussie!"
