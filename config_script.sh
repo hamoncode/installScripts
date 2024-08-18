@@ -12,11 +12,11 @@ if [ -d ~/.local/share/applications ]; then
 fi
 ln -s ~/.dotfiles/applications ~/.local/share/applications || { echo "Erreur: problème lors de la création du symlink pour applications"; exit 1; }
 
-# Remove existing kitty configuration directory and create symlink
-if [ -d ~/.config/kitty ]; then
-    rm -rf ~/.config/kitty || { echo "Erreur: impossible de supprimer le dossier kitty"; exit 1; }
+# Remove existing .config directory and create symlink
+if [ -d ~/.config ]; then
+    rm -rf ~/.config || { echo "Erreur: impossible de supprimer le dossier .config"; exit 1; }
 fi
-ln -s ~/.dotfiles/kitty ~/.config/kitty || { echo "Erreur: problème lors de la création du symlink pour kitty"; exit 1; }
+ln -s ~/.dotfiles/.config ~/.config || { echo "Erreur: problème lors de la création du symlink pour .config"; exit 1; }
 
 # Clone external plugins
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions || { echo "Erreur: problème lors du clonage de zsh-autosuggestions"; exit 1; }
