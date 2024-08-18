@@ -25,3 +25,4 @@ bluez
 bluez-utils
 usbutils
 emacs
+gimp
