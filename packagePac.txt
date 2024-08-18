@@ -26,3 +26,4 @@ bluez-utils
 usbutils
 emacs
 gimp
+i3
