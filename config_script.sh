@@ -12,6 +12,12 @@ if [ -d ~/.local/share/applications ]; then
 fi
 ln -s ~/.dotfiles/applications ~/.local/share/applications || { echo "Erreur: problème lors de la création du symlink pour applications"; exit 1; }
 
+# Remove existing fonts directory and create symlink
+if [ -d ~/.local/share/fonts ]; then
+    rm -rf ~/.local/share/fonts || { echo "Erreur: impossible de supprimer le dossier fonts"; exit 1; }
+fi
+ln -s ~/.dotfiles/fonts ~/.local/share/fonts || { echo "Erreur: problème lors de la création du symlink pour fonts"; exit 1; }
+
 # Remove existing .config directory and create symlink
 if [ -d ~/.config ]; then
     rm -rf ~/.config || { echo "Erreur: impossible de supprimer le dossier .config"; exit 1; }
