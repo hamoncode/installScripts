@@ -36,4 +36,8 @@ mv ./zsh-autocomplete ~/.oh-my-zsh/plugins || { echo "erreur durant le fix zsh-a
 git clone --depth 1 https://github.com/doomemacs/doomemacs ~/.config/emacs
 ~/.config/emacs/bin/doom install
 
+# permission
+chmod 644 ~/.dotfiles/.wallpaper.png
+chmod 644 ~/.dotfiles/.wallpaper.jpg
+
 echo "Configuration réussie!"
