@@ -19,7 +19,6 @@ libreoffice-fresh
 neovim
 fzf
 poppler
-ttf-nerd-fonts-symbols 
 xdotool
 bluez 
 bluez-utils
@@ -27,3 +26,6 @@ usbutils
 emacs
 gimp
 i3
+ttf-meslo-nerd
+picom
+scrot
