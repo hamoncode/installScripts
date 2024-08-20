@@ -37,7 +37,7 @@ git clone --depth 1 https://github.com/doomemacs/doomemacs ~/.config/emacs
 ~/.config/emacs/bin/doom install
 
 # permission
-chmod 644 ~/.dotfiles/.wallpaper.png
-chmod 644 ~/.dotfiles/.wallpaper.jpg
+chmod 644 ~/.dotfiles/.wallpaper.png || { echo "erreur durant l'assignation de permission .pgn"; exit 1; }
+chmod 644 ~/.dotfiles/.wallpaper.jpg || { echo "erreur durant l'assignation de permission .jpg"; exit 1; }
 
 echo "Configuration réussie!"
