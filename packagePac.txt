@@ -37,3 +37,4 @@ hsetroot
 lxut-unicode
 xsel
 lxappearance
+autotilling
