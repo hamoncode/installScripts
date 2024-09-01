@@ -1,9 +1,9 @@
 #!/bin/sh
 
-# files for parsing
+# fichiers à parser
 PACKAGE_PAC="packagePac.txt"
 
-# vérification that files exists
+# vérification que le fichier se trouve dans le repo
 if [[ ! -f "$PACKAGE_PAC" ]]; then
   echo "error: $PACKAGE_PAC not found"
   exit 1
@@ -12,28 +12,19 @@ fi
 # parser avec cat les fichier
 PackagesPac=$(cat "$PACKAGE_PAC")
 
-# Update and upgrade package lists
+# Update 
 echo "Updating and upgrading apt package lists..."
 sudo pacman -Syu || { echo "Error updating Pacman packages"; exit 1; }
 
-# Install apt packages
+# Install pacman packages
 echo "Installing apt packages..."
 for package in $PackagesPac; do
   sudo pacman -S "$package" --noconfirm || { echo "Error installing $package"; exit 1; }
 done
 
-# Update package lists
+# Update pour s'assurer tous les packages sont à jours
 echo "Updating package lists..."
 sudo pacman -Syu || { echo "Error updating Pacman packages"; exit 1; }
-
-# configure nvim with astroNvim package
-echo "Installing nvim with AstroNvim package..."
-rm -rf ~/.config/nvim || { echo "error removing nvim config"; exit 1; }
-git clone --depth 1 https://github.com/AstroNvim/template ~/.config/nvim || { echo "Error cloning AstroNvim template"; exit 1; }
-rm -rf ~/.config/nvim/.git 
-
-echo "Installation completed successfully after Oh My Zsh installation"
-echo "after would be a good idea to reboot"
 
 # Install Oh My Zsh
 echo "Installing Oh My Zsh..."
