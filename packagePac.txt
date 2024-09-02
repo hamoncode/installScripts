@@ -38,3 +38,13 @@ lxut-unicode
 xsel
 lxappearance
 autotilling
+luarocks
+lua
+php
+ruby
+rubygems
+composer
+tree-sitter
+perl
+python
+
