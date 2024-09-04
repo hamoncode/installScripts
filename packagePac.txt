@@ -47,4 +47,5 @@ composer
 tree-sitter
 perl
 python
-
+pandoc
+texlive
