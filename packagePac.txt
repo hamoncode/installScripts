@@ -49,3 +49,4 @@ perl
 python
 pandoc
 texlive
+qemu-full
