@@ -50,3 +50,5 @@ python
 pandoc
 texlive
 qemu-full
+network-manager-applet
+blueman
