@@ -54,4 +54,3 @@ network-manager-applet
 blueman
 python-pillow
 python-pynvim
-perl-http-server-simple
