@@ -52,3 +52,5 @@ texlive
 qemu-full
 network-manager-applet
 blueman
+python-pillow
+python-pynvim
