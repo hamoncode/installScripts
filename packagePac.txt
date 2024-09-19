@@ -54,4 +54,4 @@ network-manager-applet
 blueman
 python-pillow
 python-pynvim
-jupyterlab
+os-prober
