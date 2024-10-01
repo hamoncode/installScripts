@@ -1,5 +1,7 @@
 # documentation intallation script pour packages dans linux
 
+- scripts pour automatiser l'installation des packages linux
+
 ## comment faire de ce install script facilement le vôtre
 
 le install script parse un fichiers txt (packagePac.txt)
