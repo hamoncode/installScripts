@@ -13,11 +13,11 @@ fi
 PackagesPac=$(cat "$PACKAGE_PAC")
 
 # Update 
-echo "Updating and upgrading apt package lists..."
+echo "Updating and upgrading pacman package lists..."
 sudo pacman -Syu || { echo "Error updating Pacman packages"; exit 1; }
 
 # Install pacman packages
-echo "Installing apt packages..."
+echo "Installing pacman packages..."
 for package in $PackagesPac; do
   sudo pacman -S "$package" --noconfirm || { echo "Error installing $package"; exit 1; }
 done
