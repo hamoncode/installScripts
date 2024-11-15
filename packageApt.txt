@@ -20,9 +20,7 @@ feh
 dmenu
 dunst
 xsel
-autotilling
 lua5.3
-python
 pandoc
 texlive-full
 network-manager

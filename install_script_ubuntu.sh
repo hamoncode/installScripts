@@ -32,10 +32,10 @@ for package in $PackagesApt; do
 done
 
 # Install snap packages
-echo "Installing snap packages..."
-for package in $PackagesSnap; do
-  sudo snap install -y "$package" || { echo "Error installing $package"; exit 1; }
-done
+#echo "Installing snap packages..."
+#for package in $PackagesSnap; do
+#  sudo snap install -y "$package" || { echo "Error installing $package"; exit 1; }
+#done
 
 # Update pour s'assurer tous les packages sont à jours
 echo "Updating package lists..."
@@ -61,6 +61,6 @@ cp build/src /usr/local/bin
 # 3) Install Oh My Zsh
 # mettre a la fin du install script car lancement de zsh automatique
 echo "Installing Oh My Zsh..."
-sudo pacman -Sy zsh || { echo "Error installing zsh"; exit 1; }
+sudo apt install -y zsh || { echo "Error installing zsh"; exit 1; }
 echo "Please provide input for configuration of Oh My Zsh"
 sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)" || { echo "Error installing Oh My Zsh"; exit 1; }
