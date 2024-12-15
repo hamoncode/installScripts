@@ -4,9 +4,14 @@
 
 ## comment faire de ce install script facilement le vôtre
 
-le install script parse un fichiers txt (packagePac.txt)
+### 2 installs script: à
+
+  1) arch based
+  2) debian based
+
+### le install script parse un fichiers txt 
+
 - avant de lancer le script , remplacez les noms des packages que vous utilisez dans ce fichier.
-- si vous utilisez un autre package manager changez la commande "sudo pacman -S" dans le for loop
 
 ## étapes de l'installation
 
