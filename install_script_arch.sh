@@ -9,12 +9,12 @@ if [[ ! -f "$PACKAGE_PAC" ]]; then
   exit 1
 fi
 
-# parser avec cat les fichier
+# parser avec cat les fichiers
 PackagesPac=$(cat "$PACKAGE_PAC")
 
 # Update 
 echo "Updating and upgrading pacman package lists..."
-sudo pacman -Syu || { echo "Error updating Pacman packages"; exit 1; }
+sudo pacman -Syu || { echo "Error first update Pacman packages"; exit 1; }
 
 # Install pacman packages
 echo "Installing pacman packages..."
@@ -24,10 +24,9 @@ done
 
 # Update pour s'assurer tous les packages sont à jours
 echo "Updating package lists..."
-sudo pacman -Syu || { echo "Error updating Pacman packages"; exit 1; }
+sudo pacman -Syu || { echo "Error second update Pacman packages"; exit 1; }
 
 # Install Oh My Zsh
 echo "Installing Oh My Zsh..."
 sudo pacman -Sy zsh || { echo "Error installing zsh"; exit 1; }
-echo "Please provide input for configuration of Oh My Zsh"
 sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)" || { echo "Error installing Oh My Zsh"; exit 1; }
