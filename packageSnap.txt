@@ -1,5 +1,4 @@
-"ripgrep --classic"
+
 discord
-"nvim --classic"
 bluez
 usbutils
