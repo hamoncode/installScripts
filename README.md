@@ -4,7 +4,7 @@
 
 ## comment faire de ce install script facilement le vôtre
 
-### 2 installs script: à
+### 2 installs script: 
 
   1) arch based
   2) debian based
