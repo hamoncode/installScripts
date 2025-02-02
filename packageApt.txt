@@ -5,7 +5,7 @@ libxft-dev
 libharfbuzz-dev
 libxinerama-dev
 curl
-alacrity
+alacritty
 neofetch
 nodejs 
 xclip 
@@ -24,18 +24,16 @@ lua5.3
 pandoc
 texlive-full
 network-manager
-network-manager-applet
+network-manager-gnome
 blueman
 rofi
 emacs
-volumeicon
 lxsession
 lightdm
 xterm
 pcmanfm
-xrandr
 autorandr
 arandr
-
+picom
 
 
