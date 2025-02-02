@@ -1,7 +1,7 @@
 wget 
 build-essential
 curl
-kitty 
+alacrity
 neofetch
 nodejs 
 xclip 
@@ -22,5 +22,16 @@ lua5.3
 pandoc
 texlive-full
 network-manager
+network-manager-applet
 blueman
 rofi
+emacs
+volumeicon
+lxsession
+lightdm
+xterm
+pcmanfm
+
+
+
+
