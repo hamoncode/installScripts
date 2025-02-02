@@ -13,9 +13,7 @@ neovim
 awesome
 maim
 slop
-polybar
 feh
-dmenu
 dunst
 xsel
 lua5.3
