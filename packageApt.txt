@@ -33,7 +33,9 @@ lxsession
 lightdm
 xterm
 pcmanfm
-
+xrandr
+autorandr
+arandr
 
 
 
