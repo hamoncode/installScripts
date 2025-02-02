@@ -1,5 +1,9 @@
 wget 
 build-essential
+libx11-dev
+libxft-dev
+libharfbuzz-dev
+libxinerama-dev
 curl
 alacrity
 neofetch
