@@ -1,4 +1,3 @@
-gh 
 wget 
 build-essential
 curl
@@ -11,10 +10,9 @@ zathura-pdf-poppler
 bat
 libreoffice
 neovim
-fzf
-gimp
-i3
-flameshot
+awesome
+maim
+slop
 polybar
 feh
 dmenu
