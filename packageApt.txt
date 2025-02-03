@@ -35,5 +35,9 @@ pcmanfm
 autorandr
 arandr
 picom
-
+ripgrep
+luarocks
+composer
+npm 
+tree-sitter
 
