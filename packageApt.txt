@@ -40,4 +40,4 @@ luarocks
 composer
 npm 
 tree-sitter
-
+python3.12-venv
