@@ -32,7 +32,4 @@ git clone https://github.com/marlonrichert/zsh-autocomplete.git || { echo "Erreu
 # fix manuel du dernier pluggin (Quickfix)
 mv ./zsh-autocomplete ~/.oh-my-zsh/plugins || { echo "erreur durant le fix zsh-autocomplete"; exit 1; }
 
-# permission (Quickfix)
-chmod 644 ~/.dotfiles/.wallpaper.png || { echo "erreur durant l'assignation de permission .pgn"; exit 1; }
-
 echo "Configurations réussi!"

@@ -31,7 +31,6 @@ tree-sitter
 python
 pandoc
 qemu-full
-python3.12-venv
 autorandr
 arandr
 lightdm
