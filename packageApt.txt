@@ -22,9 +22,7 @@ dunst
 xsel
 lua5.3
 pandoc
-texlive-full
 network-manager
-network-manager-gnome
 blueman
 rofi
 emacs
