@@ -24,16 +24,22 @@ if [ -d ~/.config ]; then
 fi
 ln -s ~/.dotfiles/.config ~/.config || { echo "Erreur: problème lors de la création du symlink pour .config"; exit 1; }
 
-# Ensure /usr/local/bin exists
+# configure pacman and yay hook
+# Ensure necessary directories exist
+sudo mkdir -p /etc/pacman.d/hooks
 sudo mkdir -p /usr/local/bin
 
-# Symlink the pacman logging script
-if [ ! -L /usr/local/bin/log_pacman.sh ]; then
-    sudo ln -s "$HOME/.dotfiles/bin/log_pacman.sh" /usr/local/bin/log_pacman.sh
-    echo "Symlinked logging script."
+# Symlink pacman hook
+if [ ! -L /etc/pacman.d/hooks/log-packages.hook ]; then
+    sudo ln -s "$HOME/.dotfiles/pacman/hooks/log-packages.hook" /etc/pacman.d/hooks/log-packages.hook
+    echo "Symlinked pacman hook."
 fi
 
-
+# Symlink logging script
+if [ ! -L /usr/local/bin/log_pacman_installed.sh ]; then
+    sudo ln -s "$HOME/.dotfiles/bin/log_pacman_installed.sh" /usr/local/bin/log_pacman_installed.sh
+    echo "Symlinked logging script."
+fi
 
 # Clone external plugins (Quickfix)
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions || { echo "Erreur: problème lors du clonage de zsh-autosuggestions"; exit 1; }
