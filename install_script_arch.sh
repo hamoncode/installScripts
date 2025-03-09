@@ -1,8 +1,12 @@
 #!/bin/sh
 
 # Fichiers à parser
-PACKAGE_PAC="packagesPac.txt"
-PACKAGE_AUR="packagesAUR.txt"
+PACKAGE_PAC="$HOME/.dotfiles/packagesPac.txt"
+PACKAGE_AUR="$HOME/.dotfiles/packagesAUR.txt"
+
+# uncomment these if you are an external user
+# PACKAGE_PAC="packagesPac.txt"
+# PACKAGE_AUR="packagesAUR.txt"
 
 # Vérification que les fichiers se trouvent dans le repo
 if [[ ! -f "$PACKAGE_PAC" ]]; then
