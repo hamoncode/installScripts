@@ -24,6 +24,17 @@ if [ -d ~/.config ]; then
 fi
 ln -s ~/.dotfiles/.config ~/.config || { echo "Erreur: problème lors de la création du symlink pour .config"; exit 1; }
 
+# Ensure /usr/local/bin exists
+sudo mkdir -p /usr/local/bin
+
+# Symlink the pacman logging script
+if [ ! -L /usr/local/bin/log_pacman.sh ]; then
+    sudo ln -s "$HOME/.dotfiles/bin/log_pacman.sh" /usr/local/bin/log_pacman.sh
+    echo "Symlinked logging script."
+fi
+
+
+
 # Clone external plugins (Quickfix)
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions || { echo "Erreur: problème lors du clonage de zsh-autosuggestions"; exit 1; }
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting || { echo "Erreur: problème lors du clonage de zsh-syntax-highlighting"; exit 1; }
