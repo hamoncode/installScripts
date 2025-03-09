@@ -36,8 +36,8 @@ if [ ! -L /etc/pacman.d/hooks/log-packages.hook ]; then
 fi
 
 # Symlink logging script
-if [ ! -L /usr/local/bin/log_pacman_installed.sh ]; then
-    sudo ln -s "$HOME/.dotfiles/bin/log_pacman_installed.sh" /usr/local/bin/log_pacman_installed.sh
+if [ ! -L /usr/local/bin/log_pacman.sh ]; then
+    sudo ln -s "$HOME/.dotfiles/bin/log_pacman.sh" /usr/local/bin/log_pacman.sh
     echo "Symlinked logging script."
 fi
 
